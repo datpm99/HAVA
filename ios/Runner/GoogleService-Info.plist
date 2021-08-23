@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>589503107714-j4jj6bpc90mvsd9edu11r4gol778dnh8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.589503107714-j4jj6bpc90mvsd9edu11r4gol778dnh8</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>589503107714-l0fbmg57fpmdhsh6jtp589tqptu94k92.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCVBKkHuENL2vdVOVzMUEnMcRSDCe8h5i0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>589503107714</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.hava</string>
+	<key>PROJECT_ID</key>
+	<string>hava-25dff</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hava-25dff.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:589503107714:ios:8e435443941c2913429a9b</string>
+</dict>
+</plist>

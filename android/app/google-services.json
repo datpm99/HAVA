@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "589503107714",
+    "project_id": "hava-25dff",
+    "storage_bucket": "hava-25dff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589503107714:android:b265771319ac081d429a9b",
+        "android_client_info": {
+          "package_name": "com.example.hava"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "589503107714-l0fbmg57fpmdhsh6jtp589tqptu94k92.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hava",
+            "certificate_hash": "1dbeff9f4cd48cad69817044bc6cf4b95f9daa53"
+          }
+        },
+        {
+          "client_id": "589503107714-u8g62aj2v2f41ao4efokobkh0pdn5tel.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALiyMXZyvafn7LbJaVZo6b0hIgdOetIGA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "589503107714-u8g62aj2v2f41ao4efokobkh0pdn5tel.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
