@@ -1,5 +1,5 @@
 class ApiConfig {
-  static const String baseUrl = 'http://192.168.90.110:8081/api/v1';
+  static const String baseUrl = 'http://192.168.0.112:8081/api/v1';
 
   //datpm 192.168.10.102
   //192.168.90.110

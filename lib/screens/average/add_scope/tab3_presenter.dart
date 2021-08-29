@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'package:hava/even_bus/event.dart';
 import 'package:hava/models/tran_model.dart';
 import 'package:hava/src/lib_presenter.dart';
 import '../average_api_client.dart';
@@ -15,30 +14,21 @@ class Tab3Presenter extends Presenter {
   List<double> listMTerm1 = [];
   List<double> listMTerm2 = [];
   List<double> listMAll = [];
+  List<MarkModel> listTerm1 = [];
+  List<MarkModel> listTerm2 = [];
 
   @override
   void init() {
     super.init();
     _apiClient = AverageApiClient(context);
-    eventBus.on<UpdateMarkEvent>().listen((event) {
-      calTerm1();
-      calTerm2();
-      calTermAll();
-      calMarkAll();
-      view.updateState();
-    });
   }
 
   @override
   void loadData() async {
     super.loadData();
-    if (userRes.listTerm1.isEmpty) {
-      userRes.listTerm1 = await _apiClient.getMarkByTerm(idTran, 1);
-    }
-    if (userRes.listTerm2.isEmpty) {
-      userRes.listTerm2 = await _apiClient.getMarkByTerm(idTran, 2);
-    }
-    list.addAll(userRes.listTerm1);
+    listTerm1 = await _apiClient.getMarkByTerm(idTran, 1);
+    listTerm2 = await _apiClient.getMarkByTerm(idTran, 2);
+    list.addAll(listTerm1);
     calTerm1();
     calTerm2();
     calTermAll();
@@ -69,23 +59,23 @@ class Tab3Presenter extends Presenter {
   }
 
   void calTerm1() {
-    for (int i = 0; i < userRes.listTerm1.length; i++) {
-      MarkModel model = userRes.listTerm1[i];
+    for (int i = 0; i < listTerm1.length; i++) {
+      MarkModel model = listTerm1[i];
       double markRaw = calMarkSub(model.listMark);
       listMTerm1.add(markRaw);
     }
   }
 
   void calTerm2() {
-    for (int i = 0; i < userRes.listTerm2.length; i++) {
-      MarkModel model = userRes.listTerm2[i];
+    for (int i = 0; i < listTerm2.length; i++) {
+      MarkModel model = listTerm2[i];
       double markRaw = calMarkSub(model.listMark);
       listMTerm2.add(markRaw);
     }
   }
 
   void calTermAll() {
-    for (int i = 0; i < userRes.listTerm1.length; i++) {
+    for (int i = 0; i < listTerm1.length; i++) {
       double markRaw = (listMTerm1[i] + (listMTerm2[i] * 2)) / 3;
       listMAll.add(markRaw);
     }

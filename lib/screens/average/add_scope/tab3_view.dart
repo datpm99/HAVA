@@ -128,6 +128,7 @@ class _Tab3ViewState extends State<Tab3View> implements Contract {
 
   @override
   void updateState() {
-    if (mounted) setState(() {});
+    // if (mounted)
+    setState(() {});
   }
 }

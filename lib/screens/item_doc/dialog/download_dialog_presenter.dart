@@ -1,3 +1,5 @@
+import 'dart:typed_data';
+
 import 'package:dio/dio.dart';
 import 'package:hava/src/lib_presenter.dart';
 import 'package:image_gallery_saver/image_gallery_saver.dart';
@@ -26,7 +28,7 @@ class DownloadDialogPresenter extends Presenter {
       value = progress / 100;
       view.updateState();
     });
-    final result = await ImageGallerySaver.saveFile(savePath);
+    await ImageGallerySaver.saveFile(savePath);
     onBack();
     Utils.showToast('Tài liệu đã được tải về thành công!');
   }

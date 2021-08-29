@@ -31,7 +31,7 @@ class ItemDocPresenter extends Presenter {
 
   Future<Directory?> getDownloadDirectory() async {
     if (Platform.isAndroid) {
-      return await getExternalStorageDirectory();
+      return await getTemporaryDirectory();
     } else {
       return await getApplicationDocumentsDirectory();
     }

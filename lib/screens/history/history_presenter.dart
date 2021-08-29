@@ -263,19 +263,22 @@ class HistoryPresenter extends Presenter {
 
   void loadChart1() {
     double numP = 0.2;
+    int numExam = 0;
     if (list1.isNotEmpty) {
       if (list1.length < 10) {
         for (int i = list1.length - 1; i >= 0; i--) {
           HistoryModel model = list1[i];
+          numExam++;
           HisChart modelChart =
-              HisChart(point: (model.trueAnswer * numP), num: i + 1);
+              HisChart(point: (model.trueAnswer * numP), num: numExam);
           listChart1.add(modelChart);
         }
       } else {
         for (int i = 9; i >= 0; i--) {
           HistoryModel model = list1[i];
+          numExam++;
           HisChart modelChart =
-              HisChart(point: (model.trueAnswer * numP), num: i + 1);
+              HisChart(point: (model.trueAnswer * numP), num: numExam);
           listChart1.add(modelChart);
         }
       }
@@ -284,19 +287,22 @@ class HistoryPresenter extends Presenter {
 
   void loadChart2() {
     double numP = 0.25;
+    int numExam = 0;
     if (list2.isNotEmpty) {
       if (list2.length < 10) {
         for (int i = list2.length - 1; i >= 0; i--) {
           HistoryModel model = list2[i];
+          numExam++;
           HisChart modelChart =
-              HisChart(point: (model.trueAnswer * numP), num: i + 1);
+              HisChart(point: (model.trueAnswer * numP), num: numExam);
           listChart2.add(modelChart);
         }
       } else {
         for (int i = 9; i >= 0; i--) {
           HistoryModel model = list2[i];
+          numExam++;
           HisChart modelChart =
-              HisChart(point: (model.trueAnswer * numP), num: i + 1);
+              HisChart(point: (model.trueAnswer * numP), num: numExam);
           listChart2.add(modelChart);
         }
       }
@@ -305,19 +311,22 @@ class HistoryPresenter extends Presenter {
 
   void loadChart3() {
     double numP = 0.25;
+    int numExam = 0;
     if (list3.isNotEmpty) {
       if (list3.length < 10) {
         for (int i = list3.length - 1; i >= 0; i--) {
           HistoryModel model = list3[i];
+          numExam++;
           HisChart modelChart =
-              HisChart(point: (model.trueAnswer * numP), num: i + 1);
+              HisChart(point: (model.trueAnswer * numP), num: numExam);
           listChart3.add(modelChart);
         }
       } else {
         for (int i = 9; i >= 0; i--) {
           HistoryModel model = list3[i];
+          numExam++;
           HisChart modelChart =
-              HisChart(point: (model.trueAnswer * numP), num: i + 1);
+              HisChart(point: (model.trueAnswer * numP), num: numExam);
           listChart3.add(modelChart);
         }
       }
@@ -326,19 +335,22 @@ class HistoryPresenter extends Presenter {
 
   void loadChart4() {
     double numP = 0.25;
+    int numExam = 0;
     if (list4.isNotEmpty) {
       if (list4.length < 10) {
         for (int i = list4.length - 1; i >= 0; i--) {
           HistoryModel model = list4[i];
+          numExam++;
           HisChart modelChart =
-              HisChart(point: (model.trueAnswer * numP), num: i + 1);
+              HisChart(point: (model.trueAnswer * numP), num: numExam);
           listChart4.add(modelChart);
         }
       } else {
         for (int i = 9; i >= 0; i--) {
           HistoryModel model = list4[i];
+          numExam++;
           HisChart modelChart =
-              HisChart(point: (model.trueAnswer * numP), num: i + 1);
+              HisChart(point: (model.trueAnswer * numP), num: numExam);
           listChart4.add(modelChart);
         }
       }
@@ -347,19 +359,22 @@ class HistoryPresenter extends Presenter {
 
   void loadChart5() {
     double numP = 0.2;
+    int numExam = 0;
     if (list5.isNotEmpty) {
       if (list5.length < 10) {
         for (int i = list5.length - 1; i >= 0; i--) {
           HistoryModel model = list5[i];
+          numExam++;
           HisChart modelChart =
-              HisChart(point: (model.trueAnswer * numP), num: i + 1);
+              HisChart(point: (model.trueAnswer * numP), num: numExam);
           listChart5.add(modelChart);
         }
       } else {
         for (int i = 9; i >= 0; i--) {
           HistoryModel model = list5[i];
+          numExam++;
           HisChart modelChart =
-              HisChart(point: (model.trueAnswer * numP), num: i + 1);
+              HisChart(point: (model.trueAnswer * numP), num: numExam);
           listChart5.add(modelChart);
         }
       }

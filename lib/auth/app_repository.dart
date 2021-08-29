@@ -61,8 +61,6 @@ class UserRepository {
   int numQuesEng = 0;
 
   //List Mark.
-  List listTerm1 = [];
-  List listTerm2 = [];
   bool isUpPoint = false;
   List<QuestionModel> listQuesHive = [];
 

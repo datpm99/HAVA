@@ -269,9 +269,13 @@ class EnglishPresenter extends Presenter {
       listTotalHis = await _apiClient.getTotal(idHis);
     }
     onBack();
-    dialogShowResult();
-    playMusic();
-    view.updateState();
+    if (isIdExam == 2) {
+      onBack();
+    } else {
+      dialogShowResult();
+      playMusic();
+      view.updateState();
+    }
   }
 
   void totalTime() {

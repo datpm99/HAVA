@@ -248,18 +248,17 @@ class PracticePresenter extends Presenter {
         test_schedules_id: idSchedule,
         type: isIdExam,
       );
-      // String abc = jsonEncode(listAnswerModel);
-      // String a = abc.substring(0,1000);
-      // String b = abc.substring(1000,abc.length);
-      // print('$a');
-      // print('$b');
       int idHis = await _apiClient.addHistory(jsonEncode(listAnswerModel));
       listTotalHis = await _apiClient.getTotal(idHis);
     }
     onBack();
-    dialogShowResult();
-    showMusic();
-    view.updateState();
+    if(isIdExam == 2){
+      onBack();
+    }else{
+      dialogShowResult();
+      showMusic();
+      view.updateState();
+    }
   }
 
   void onSubmit() {
