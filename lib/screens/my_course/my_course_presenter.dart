@@ -64,9 +64,9 @@ class MyCoursePresenter extends Presenter {
         id = 5;
         break;
       case 5:
-        sub = 'Ngữ văn';
-        img = 'assets/icons/ic_sub6.png';
-        id = 9;
+        sub = 'Lịch Sử';
+        img = 'assets/icons/ic_sub4.png';
+        id = 6;
         break;
       case 6:
         sub = 'Địa lý';
@@ -79,9 +79,9 @@ class MyCoursePresenter extends Presenter {
         id = 8;
         break;
       case 8:
-        sub = 'Lịch Sử';
-        img = 'assets/icons/ic_sub4.png';
-        id = 6;
+        sub = 'Ngữ văn';
+        img = 'assets/icons/ic_sub6.png';
+        id = 9;
         break;
     }
     Utils.navigatePage(context, CourseView(sub: sub, img: img, id: id));
